@@ -1,0 +1,125 @@
+math:
+  pi:
+    value: 3.141592653589793
+    units: rad
+    description: Ratio of a circle's circumference to its diameter
+
+  two_pi:
+    value: 6.283185307179586
+    units: rad
+    description: 2*pi
+
+  deg_to_rad:
+    value: 0.017453292519943295
+    units: rad/deg
+    description: Degrees to radians conversion constant
+
+  rad_to_deg:
+    value: 57.29577951308232
+    units: deg/rad
+    description: Radians to degrees conversion constant
+
+physics:
+  g0:
+    value: 9.80665
+    units: m/s^2
+    source: ISO 80000-3
+    description: Standard gravity
+
+  c_light:
+    value: 299792458.0
+    units: m/s
+    source: CODATA
+    description: Speed of light in vacuum
+
+  sigma_sb:
+    value: 5.670374419e-8
+    units: W/(m^2·K^4)
+    source: CODATA 2018
+    description: Stefan–Boltzmann constant
+
+thermodynamics:
+  R_universal:
+    value: 8.314462618
+    units: J/(mol·K)
+    source: CODATA
+    description: Universal gas constant
+
+  R_air:
+    value: 287.05
+    units: J/(kg·K)
+    description: Specific gas constant for dry air
+
+  gamma_air:
+    value: 1.4
+    units: "-"
+    description: Specific heat ratio for dry air
+
+  T0_std:
+    value: 288.15
+    units: K
+    description: ISA standard sea-level temperature
+
+  p0_std:
+    value: 101325.0
+    units: Pa
+    description: ISA standard sea-level pressure
+
+  rho0_std:
+    value: 1.225
+    units: kg/m^3
+    description: ISA standard sea-level density
+
+astrodynamics:
+  mu_earth:
+    value: 3.986004418e14
+    units: m^3/s^2
+    description: Earth standard gravitational parameter
+
+  mu_moon:
+    value: 4.9048695e12
+    units: m^3/s^2
+    description: Moon standard gravitational parameter
+
+  mu_sun:
+    value: 1.32712440018e20
+    units: m^3/s^2
+    description: Sun standard gravitational parameter
+
+  R_earth:
+    value: 6378137.0
+    units: m
+    description: Earth equatorial radius (WGS-84)
+
+  omega_earth:
+    value: 7.2921150e-5
+    units: rad/s
+    description: Earth rotation angular velocity
+
+  J2_earth:
+    value: 1.08262668e-3
+    units: "-"
+    description: Earth second zonal harmonic (J2)
+
+flight_dynamics:
+  g_load_unit:
+    value: 9.80665
+    units: m/s^2
+    description: Load factor unit (1g)
+
+aerodynamics:
+  Sutherland_C:
+    value: 110.4
+    units: K
+    description: Sutherland constant for air
+
+  mu_ref_air:
+    value: 1.716e-5
+    units: kg/(m·s)
+    description: Reference dynamic viscosity of air
+
+control:
+  eps:
+    value: 1.0e-12
+    units: "-"
+    description: Numerical epsilon for control algorithms

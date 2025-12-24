@@ -1,0 +1,76 @@
+angle:
+  deg_to_rad:
+    factor: 0.017453292519943295
+  rad_to_deg:
+    factor: 57.29577951308232
+
+length:
+  inch_to_m:
+    factor: 0.0254
+  m_to_inch:
+    factor: 39.37007874015748
+
+  ft_to_m:
+    factor: 0.3048
+  m_to_ft:
+    factor: 3.280839895013123
+
+  nmi_to_m:
+    factor: 1852.0
+  m_to_nmi:
+    factor: 0.0005399568034557235
+
+mass:
+  lb_to_kg:
+    factor: 0.45359237
+  kg_to_lb:
+    factor: 2.2046226218487757
+
+force:
+  lbf_to_N:
+    factor: 4.4482216152605
+  N_to_lbf:
+    factor: 0.22480894387096
+
+pressure:
+  psi_to_Pa:
+    factor: 6894.757293168361
+  Pa_to_psi:
+    factor: 0.00014503773773020923
+
+  atm_to_Pa:
+    factor: 101325.0
+  Pa_to_atm:
+    factor: 9.869232667160128e-6
+
+velocity:
+  kt_to_mps:
+    factor: 0.5144444444444445
+  mps_to_kt:
+    factor: 1.9438444924406048
+
+  fps_to_mps:
+    factor: 0.3048
+  mps_to_fps:
+    factor: 3.280839895013123
+
+energy:
+  ftlb_to_J:
+    factor: 1.3558179483314004
+  J_to_ftlb:
+    factor: 0.7375621492772656
+
+temperature:
+  C_to_K:
+    factor: 1.0
+    offset: 273.15
+  K_to_C:
+    factor: 1.0
+    offset: -273.15
+
+  F_to_R:
+    factor: 1.0
+    offset: 459.67
+  R_to_F:
+    factor: 1.0
+    offset: -459.67
