@@ -1,5 +1,5 @@
 import pandas as pd
-from dataplot import DataPlotter
+from python_utilities.plotting.dataplot import DataPlotter
 
 df = pd.read_csv('files_to_use/RRC3_FLIGHT_DATA_2025_IREC.csv')
 

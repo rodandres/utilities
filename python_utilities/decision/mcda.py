@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from general_utilities import _center_text, print_df_pretty, df_to_markdown_pretty
+from python_utilities.general import center_text, print_df_pretty, df_to_markdown_pretty
 
 class DecisionMatrix:
 
@@ -109,17 +109,17 @@ class DecisionMatrix:
     def best_option(self):
         scores = self._compute_final_scores()
 
-        print(_center_text(" FINAL SCORES "))
+        print(center_text(" FINAL SCORES "))
         for option, score in zip(self.design_options_names, scores):
             txt_result = f"Final score for {option}: {round(score, 2)} points"
             print(txt_result)
         
-        print(_center_text("", fill_char="-"))        
+        print(center_text("", fill_char="-"))        
 
         best_idx = np.argmax(scores)        
         txt_best_option = f"The best option is {self.design_options_names[best_idx]} with {round(scores[best_idx], 2)} points over 100"
-        print(_center_text(txt_best_option, fill_char=" "))
-        print(_center_text(""))
+        print(center_text(txt_best_option, fill_char=" "))
+        print(center_text(""))
 
         return best_idx, scores
 
@@ -138,9 +138,9 @@ class DecisionMatrix:
     
     def show_matrix(self):
         df = self.get_matrix()
-        print(_center_text(" ORIGINAL MATRIX "))
+        print(center_text(" ORIGINAL MATRIX "))
         print_df_pretty(df)
-        print(_center_text(""))
+        print(center_text(""))
 
     def get_normalized_matrix(self):
         
@@ -156,9 +156,9 @@ class DecisionMatrix:
     
     def show_normalized_matrix(self):
         df = self.get_normalized_matrix()
-        print(_center_text(" NORMALIZED MATRIX "))
+        print(center_text(" NORMALIZED MATRIX "))
         print_df_pretty(df)
-        print(_center_text(""))
+        print(center_text(""))
 
     # ------------------------------------------------------------------
     # Export functions

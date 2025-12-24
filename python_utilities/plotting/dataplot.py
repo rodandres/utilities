@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from collections.abc import Iterable
 
-from general_utilities import _center_text
+from python_utilities.general import center_text
 
 DEFAULT_LINE_STYLE = {
     "markers": "",
@@ -231,13 +231,13 @@ class DataPlotter:
     def show_info(self):
         """Display basic information about the DataFrame."""
 
-        print(_center_text(" INFORMATION SECTION "))        
-        print(_center_text("DataFrame Information", fill_char=" "))        
+        print(center_text(" INFORMATION SECTION "))        
+        print(center_text("DataFrame Information", fill_char=" "))        
         print(self._data.info())
-        print(_center_text("", fill_char="-"))
-        print(_center_text("DataFrame Description", fill_char=" "))
+        print(center_text("", fill_char="-"))
+        print(center_text("DataFrame Description", fill_char=" "))
         print(self._data.describe())
-        print(_center_text(""))
+        print(center_text(""))
 
     def general_plot(self, x_col_name, y_col_names,
                      title="General Data Plot",

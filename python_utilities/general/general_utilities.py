@@ -1,4 +1,4 @@
-def _center_text(text: str, total_chars: int = 120, fill_char: str = "=") -> str:
+def center_text(text: str, total_chars: int = 120, fill_char: str = "=") -> str:
     if text is not "":
         if len(fill_char) != 1:
             raise ValueError("fill_char must be a single character")

@@ -1,4 +1,4 @@
-from mcda import DecisionMatrix
+from python_utilities.decision.mcda import DecisionMatrix
 
 # Define geometries to compare
 srad_parachute_design_options = [
