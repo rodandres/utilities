@@ -1,3 +1,5 @@
+from pathlib import Path
+
 def center_text(text: str, total_chars: int = 120, fill_char: str = "=") -> str:
     if text is not "":
         if len(fill_char) != 1:
@@ -94,3 +96,12 @@ def df_to_markdown_pretty(df):
         lines.append(line)
 
     return "\n".join(lines)
+
+import yaml
+
+def load_yaml(path: Path) -> dict:
+    if not path.exists():
+        raise FileNotFoundError(f"YAML file not found: {path}")
+
+    with path.open("r") as f:
+        return yaml.safe_load(f)

@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from python_utilities.general import center_text, print_df_pretty, df_to_markdown_pretty
+from python_utilities.core import center_text, print_df_pretty, df_to_markdown_pretty
 
 class DecisionMatrix:
 

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from collections.abc import Iterable
 
-from python_utilities.general import center_text
+from python_utilities.core import center_text
 
 DEFAULT_LINE_STYLE = {
     "markers": "",

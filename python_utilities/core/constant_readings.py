@@ -1,5 +1,5 @@
 from pathlib import Path
-from .cte_yaml_loader import load_yaml
+from .core_utilities import load_yaml
 
 
 _BASE_DIR = Path(__file__).parents[2]
@@ -7,8 +7,8 @@ _BASE_DIR = Path(__file__).parents[2]
 _DATA_DIR = _BASE_DIR / "general"
 #_DATA_DIR = Path("/general")
 
-_constants_data = load_yaml(_DATA_DIR / "constants.yaml")
-_conversions_data = load_yaml(_DATA_DIR / "conversions.yaml")
+_constants_data = load_yaml(_DATA_DIR / "physical_constants.yaml")
+_conversions_data = load_yaml(_DATA_DIR / "physical_conversions.yaml")
 
 
 class Constants:

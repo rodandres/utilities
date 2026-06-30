@@ -1,1 +1,1 @@
-from .plotting import DataPlotter
+from .visualization import DataPlotter
